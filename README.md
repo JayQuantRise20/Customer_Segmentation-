@@ -111,13 +111,13 @@ We have used also the information from the Unsupervised Learning part such that 
 
 The model RandomForestregressor gives pretty good estimation for the test data. The prediction results for the three models created above are highlighted below. In svc model we used the top 100 features which represent the customer data to find better predictions. we fitted well with train data, but the prediction results were not improved and it was much worse than the other model predictions.
 
-                        Train        Test
+                             Train        Test
 
-RandomForestRegressor   0.975        0.745
+    RandomForestRegressor   0.975        0.745
 
-LogisticRegression      0.80         0.68
+    LogisticRegression      0.80         0.68
 
-SVC on top features     0.974        0.45
+    SVC on top features     0.974        0.45
 
 
 ## 4.Acknowledgement:
