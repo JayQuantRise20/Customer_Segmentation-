@@ -17,9 +17,9 @@ In this project, we  analyzed demographics data for customers of a mail-order sa
 In this section we tried to get infomoration of the data as much as possible. we tried to analyse and visualize the data,then clean and scale it for modeling. 
 This section is performed with following steps:
 
-1- Analyse the Data
-2- Clean 
-3- Scale
+1. Analyse the Data
+2. Clean 
+3. Scale
 
 #### Analyze Raw data:
 
