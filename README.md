@@ -109,7 +109,7 @@ We have used also the information from the Unsupervised Learning part such that 
 
 
 
-## Acknowledgement:
+## 3.Acknowledgement:
 
 Many Thanks to **Udacity** for providing me this opportunity to work on this project and all the support. I also thank Bertelsmann Arvato Analytics  for the real world data they have provided to make the project mouch interesting and challenging. The main data is hidden for privacy purposes so it is not provided for public. 
 
