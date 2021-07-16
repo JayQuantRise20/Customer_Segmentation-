@@ -4,6 +4,7 @@
 
 
 ### 1.Project Description
+
 In this project, we  analyzed demographics data for customers of a mail-order sales company in Germany, comparing it against demographics information for the general population. We used unsupervised learning techniques to perform customer segmentation, identifying the parts of the population that best describe the core customer base of the company. Then, I applied what I had learned on a third dataset with demographics information for targets of a marketing campaign for the company, and used a model to predict which individuals are most likely to convert into becoming customers for the company. The data that  we used has been provided by  Bertelsmann Arvato Analytics on behalf of **Udacity**, and represents a real-life data science task.
 
 ### Project Contents:
@@ -13,7 +14,7 @@ In this project, we  analyzed demographics data for customers of a mail-order sa
 - Supervised Learning Model
 - Evaluation of Results
 
-####  Get to know the Data
+###  Get to know the Data
 In this section we tried to get infomoration of the data as much as possible. we tried to analyse and visualize the data,then clean and scale it for modeling. 
 This section is performed with following steps:
 
@@ -36,6 +37,41 @@ The "CUSTOMERS" file contains three extra columns ('CUSTOMER_GROUP', 'ONLINE_PUR
 
 Otherwise, all of the remaining columns are the same between the three data files. For more information about the columns depicted in the files, you can refer to two Excel spreadsheets provided in the workspace. [One of them](./DIAS Information Levels - Attributes 2017.xlsx) is a top-level list of attributes and descriptions, organized by informational category. [The other](./DIAS Attributes - Values 2017.xlsx) is a detailed mapping of data values for each feature in alphabetical order.
 
-In the below cell, we've provided some initial code to load in the first two datasets. Note for all of the .csv data files in this project that they're semicolon (;) delimited, so an additional argument in the read_csv() call has been included to read in the data properly. Also, considering the size of the datasets, it may take some time for them to load completely.
 
 You'll notice when the data is loaded in that a warning message will immediately pop up. Before you really start digging into the modeling and analysis, you're going to need to perform some cleaning. Take some time to browse the structure of the data and look over the informational spreadsheets to understand the data values. Make some decisions on which features to keep, which features to drop, and if any revisions need to be made on data formats. It'll be a good idea to create a function with pre-processing steps, since you'll need to clean all of the datasets before you work with them.
+
+#### Clean Data:
+
+The cleaning process consists of 5 main steps:
+
+1. There are some values in the data which are labeled as uknown in the information excel file DIAS Attributes. These unkown values which take the values of 0,-1 and 9 in different columns need to be replaced by NaN values, as they don't contain any information and they are meaningless. So first step is to find these values and replace them with NaN.
+
+2. There are two columns asscociated with date object(EINGEFUEGT_AM,GEBURTSJAHR). These columns should be treated as numbers. The second one is already number and for the first one we can convert it to year and the make it as float.
+ 
+3. there are certain rows that are mostly NaN values and they give no useful information. in fact we can drop the people who contain a few information. So, we keep rows with at least 75% non NaN values.
+ 
+4. we need to find the categorical columns and treat them well. we have to convert two of them to numerical columns, and decide which of them can be converted to dummies and which one is not necessary.
+ 
+5. finally, we impute the NaN values with appropriate values of their assocciated columns.
+
+#### Scale Data:
+
+The scaling is necessary for this data and we used the sklearn **StandardScaler()** function to standardize it by subtracting the mean and dividing to standard deviation in each column. 
+
+
+### Customer Segmentation Report(Unspervised learning model)
+
+The main bulk of the analysis will come in this part of the project. Here, we  used unsupervised learning techniques to describe the relationship between the demographics of the company's existing customers and the general population of Germany. By the end of this part,we were able to describe parts of the general population that are more likely to be part of the mail-order company's main customer base, and which parts of the general population are less so.
+
+the follosing steps are performed for this section:
+
+- Principal Component Analysis of Population data
+-  Clustering of the Data
+
+as the number of features (365) are a lot for clustering of the data, we used PCA analysis to reduce the dimentionality of the azdias(population data) and then used **Kmean** clustering to find the cluster labels. we also used **elbow** method to find the optimal clusters of the data. then, we projected the customer data on the population clusters to find out which clusters they belong to. we plotted the total data cluster counts for each azdias and projected customers on azdias and the following plot illustrate the differences between them. 
+
+
+
+
+
+-  
