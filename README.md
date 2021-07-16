@@ -71,6 +71,9 @@ the follosing steps are performed for this section:
 as the number of features (365) are a lot for clustering of the data, we used PCA analysis to reduce the dimentionality of the azdias(population data) and then used **Kmean** clustering to find the cluster labels. we also used **elbow** method to find the optimal clusters of the data. then, we projected the customer data on the population clusters to find out which clusters they belong to. we plotted the total data cluster counts for each azdias and projected customers on azdias and the following plot illustrate the differences between them. 
 
 
+![](images/Screenshot 2021-07-16 at 12.35.02.png)
+
+
 
 
 
