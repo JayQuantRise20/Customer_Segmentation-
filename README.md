@@ -107,9 +107,20 @@ The performance of the **RandomForestRegressor** has given us **AUC** score of *
 
 We have used also the information from the Unsupervised Learning part such that we have used the **LogisticRegression** to find the best features or the highest informative  features to use them in this section. but, the evaluation results were not improved and it needs more detailed work to improve the results. 
 
+### 3.Conclusion:
+
+The model RandomForestregressor gives pretty good estimation for the test data. The prediction results for the three models created above are highlighted below. In svc model we used the top 100 features which represent the customer data to find better predictions. we fitted well with train data, but the prediction results were not improved and it was much worse than the other model predictions.
+
+                        Train        Test
+
+RandomForestRegressor   0.975        0.745
+
+LogisticRegression      0.80         0.68
+
+SVC on top features     0.974        0.45
 
 
-## 3.Acknowledgement:
+## 4.Acknowledgement:
 
 Many Thanks to **Udacity** for providing me this opportunity to work on this project and all the support. I also thank Bertelsmann Arvato Analytics  for the real world data they have provided to make the project mouch interesting and challenging. The main data is hidden for privacy purposes so it is not provided for public. 
 
