@@ -21,7 +21,7 @@ The project is explained in more details in my blogpost with link [here](https:/
 - sickit-learn libraries 
 - Numpy
 - Pandas
-- -Matplotlib and seaborn
+- Matplotlib and seaborn
 
 As the data is quite large, you need to have at least 4Gb RAM to successfully build the project. 
 
