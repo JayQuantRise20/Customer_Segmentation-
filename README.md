@@ -15,6 +15,16 @@ The project is explained in more details in my blogpost with link [here](https:/
 - Supervised Learning Model
 - Evaluation of Results
 
+### 3. Project Requirements:
+
+- Python 3.6 and above
+- sickit-learn libraries 
+- Numpy
+- Pandas
+- -Matplotlib and seaborn
+
+As the data is quite large, you need to have at least 4Gb RAM to successfully build the project. 
+
 ###  Get to know the Data
 In this section we tried to get infomoration of the data as much as possible. we tried to analyse and visualize the data,then clean and scale it for modeling. 
 This section is performed with following steps:
@@ -109,7 +119,7 @@ The performance of the **RandomForestRegressor** has given us **AUC** score of *
 
 We have used also the information from the Unsupervised Learning part such that we have used the **LogisticRegression** to find the best features or the highest informative  features to use them in this section. but, the evaluation results were not improved and it needs more detailed work to improve the results. 
 
-### 3.Conclusion:
+### 4.Conclusion:
 
 The model RandomForestregressor gives pretty good estimation for the test data. The prediction results for the three models created above are highlighted below. In svc model we used the top 100 features which represent the customer data to find better predictions. we fitted well with train data, but the prediction results were not improved and it was much worse than the other model predictions.
 
