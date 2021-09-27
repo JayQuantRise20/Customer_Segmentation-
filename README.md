@@ -25,6 +25,10 @@ The project is explained in more details in my blogpost with link [here](https:/
 
 As the data is quite large, you need to have at least 4Gb RAM to successfully build the project. 
 
+### Results of prediction and score on Kaggle competion:
+
+Applying the XGBoost on the train and test data and doing tuning on hyperparameters The prediction results are improved significantly from 0.74 to 0.8 and the rank on the competion page of Kaggle is 118. the best score on the competion is 0.88. So there is still room for improvement. 
+
 ###  Get to know the Data
 In this section we tried to get infomoration of the data as much as possible. we tried to analyse and visualize the data,then clean and scale it for modeling. 
 This section is performed with following steps:
